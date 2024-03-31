@@ -12,7 +12,7 @@ import com.example.contactapp.fragments.ContactsFragment;
 import com.example.contactapp.fragments.CreateContactFragment;
 import com.example.contactapp.fragments.DetailsFragment;
 
-public class MainActivity extends AppCompatActivity implements ContactsFragment.gotoAddContact, CreateContactFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements ContactsFragment.GotoAddContact, CreateContactFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

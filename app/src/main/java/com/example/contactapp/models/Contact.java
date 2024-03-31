@@ -1,5 +1,7 @@
 package com.example.contactapp.models;
 
+import androidx.annotation.NonNull;
+
 public class Contact {
     /*
      {
@@ -11,11 +13,11 @@ public class Contact {
         }
      */
 
-    private int Cid;
+    private final int Cid;
     private String Name;
-    private String Email;
-    private String Phone;
-    private String PhoneType;
+    private final String Email;
+    private final String Phone;
+    private final String PhoneType;
 
     public Contact(int cid, String name, String email, String phone, String phoneType) {
         this.Cid = cid;
@@ -41,26 +43,18 @@ public class Contact {
         return Email;
     }
 
-    public void setEmail(String email) {
-        Email = email;
-    }
 
     public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(String phone) {
-        Phone = phone;
-    }
 
     public String getPhoneType() {
         return PhoneType;
     }
 
-    public void setPhoneType(String phoneType) {
-        PhoneType = phoneType;
-    }
 
+    @NonNull
     @Override
     public String toString() {
         return "Contact{" +
